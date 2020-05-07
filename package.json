@@ -1,18 +1,18 @@
 {
-  "name": "tapei-weather-site",
+  "name": "taipei-weather-site",
   "version": "1.0.0",
-  "description": "tapei weahter table",
+  "description": "taipei weahter table",
   "main": "index.js",
-  "repository": "https://github.com/TingHaooo/tapei-weather-site.git",
+  "repository": "https://github.com/TingHaooo/taipei-weather-site.git",
   "license": "MIT",
-  "homepage": "http://tinghaooo.github.io/tapei-weather-site",
+  "homepage": "http://tinghaooo.github.io/taipei-weather-site",
   "scripts": {
     "lintStaged": "lint-staged",
     "tsc": "tsc --noEmit",
     "tsc:watch": "tsc --noEmit --watch",
     "parcel:watch": "parcel src/index.html --port 3000",
     "dev": "run-p tsc:watch parcel:watch",
-    "build": "parcel build src/index.html --no-minify --no-source-maps --no-cache --public-url /tapei-weather-site/",
+    "build": "parcel build src/index.html --no-minify --no-source-maps --no-cache --public-url /taipei-weather-site/",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist"
   },
