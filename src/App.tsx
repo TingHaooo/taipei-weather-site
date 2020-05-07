@@ -42,11 +42,11 @@ export const defaultQuery = {
 
 export const defaultQueryString = new URLSearchParams(defaultQuery).toString()
 
-export const openApiUrl = 'https://data.taipei/opendata/datalist/apiAccess?'
+export const openApiUrl = process.env.OPEN_API
 export const serverApiUrl =
   process.env.NODE_ENV === 'development'
-    ? 'http://localhost:5000/tapei-weather?'
-    : 'https://tapei-weather-api-2r5c07tiv.now.sh/tapei-weather?'
+    ? process.env.SERVER_DEV_URL
+    : process.env.SERVER_URL
 
 const ApiSourcei18n = {
   openApi: '台北市每日氣象資料 Open Api',
