@@ -9,6 +9,7 @@ const useFetch = <DataType>(defaultUrl: string) => {
 
   const fetchData = async (url: string) => {
     setLoading(true)
+    setError(null)
     try {
       const res = await fetch(url)
       const json = await res.json()
